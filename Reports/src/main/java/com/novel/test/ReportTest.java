@@ -21,9 +21,9 @@ public class ReportTest {
 		ReportTest  test   = new ReportTest();
 		//T_PRICE_BID_ID
 		Map<String, Object> params =  new HashMap<>();
-/*		params.put("M_BPARTNER_ID", 1478l);
+		params.put("M_BPARTNER_ID", 1478l);
 		params.put("Report_Dir", "d:\\vivek\\Reports\\MyReports\\");
-		test.generateReport("RegistrationPDF", params, "d:\\eatApp\\docs\\", "PDF");*/
+		test.generateReport("RegistrationPDF", params, "d:\\eatApp\\docs\\", "PDF");
 		
 	/*	params.put("T_PRICE_BID_ID", 1530l);*/
 		/*params.put("T_BIDDER_ID", 1182l);*/
