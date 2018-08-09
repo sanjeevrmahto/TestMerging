@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.novel</groupId>
+  <artifactId>Reports</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Reports</name>
+  <description>Reports</description>
+  	<properties>
+		<spring.version>5.0.1.RELEASE</spring.version>
+		<springsecurity.version>4.2.3.RELEASE</springsecurity.version>
+		<hibernate.version>5.2.17.Final</hibernate.version>
+		<junit-version>4.11</junit-version>
+		<java-version>1.8</java-version>
+		<slf4jVersion>1.6.1</slf4jVersion>
+		<jsp-version>2.1</jsp-version>
+		<jstl-version>1.2</jstl-version>
+		<fasterxml-version>2.9.2</fasterxml-version>
+	</properties>
+  <dependencies>
+  		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.7.0-SNAPSHOT</version>
+		</dependency>
+  		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+  
+  </dependencies>
+  	<build>
+		<finalName>eatApp</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+				<!-- <plugin> <groupId>org.jvnet.jaxb2.maven2</groupId> <artifactId>maven-jaxb2-plugin</artifactId> 
+				<version>0.13.3</version> <executions> <execution> <id>generate-code</id> 
+				<goals> <goal>generate</goal> </goals> <configuration> <generatePackage>com.novelerp.eat.msedcl.sap</generatePackage> 
+				<wsdl>true</wsdl> <xmlschema>false</xmlschema> <schemaDirectory>src/main/resources/sap</schemaDirectory> 
+				<schemaIncludes> <include>zvendor_create.wsdl</include> </schemaIncludes> 
+				<generateDirectory>target/generated-sources</generateDirectory> </configuration> 
+				</execution> </executions> </plugin> -->
+		</plugins>
+	</build>
+  
+</project>
